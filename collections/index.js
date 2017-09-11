@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://remn:remn@ds163301.mlab.com:63301/remn';
+const url = 'mongodb://10.198.1.215:27017/kailong';
 mongoose.Promise = global.Promise;
 mongoose.connect(url, {useMongoClient: true});
 
@@ -10,11 +10,15 @@ db.once('open', function(){
 })
 
 let Schema = mongoose.Schema;
-
-let userShema = Schema({
-  name: { type: String },
-  password: { type: String }
+//sign报名表
+let signSchema = Schema({
+  name: { type: String ,trim:true},//名字
+  phone: { type: Number ,trim:true},//手机
+  qq:{type:Number,default:null,trim:true},//qq
+  weixin:{type:String,default:null,trim:true},//微信
+  sex:{type:String,default:'男'},//性别
+  type:{type:String,trim:true},//驾照类型
+  addr:{type:String,trim:true,default:null},//地址
+  time:{type:Date,default:Date.now}//时间
 });
-
-
-module.exports.user = mongoose.model('user', userShema);
+module.exports.sign = mongoose.model('sign', signSchema);
