@@ -5,7 +5,11 @@ var assert = require('assert')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'TodoList', data: 'Success!'});
+    db.sign.find({},function(err,data){
+      assert.equal(err,null);
+      console.log(data);
+      res.render('index', { title: 'TodoList', data: data});
+    });
 });
 
 module.exports = router;
