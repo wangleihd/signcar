@@ -7,6 +7,8 @@ let configs = {
   entry: {
     vender: ['webpack/hot/dev-server', 'webpack-hot-middleware/client'], // 额外插件打包成vender
     index: './components/index.js',
+    nav_head: './components/nav_head.js'
+
   },
   output: {
     path: path.join(ROOT_PATH, 'public'),

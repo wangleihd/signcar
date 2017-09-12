@@ -5,8 +5,9 @@ class Head extends Component {
   render(){
     return (
       <div>
+        <div class="ui top attached button blue" tabindex="0">Top</div>
         <h1>Hello {this.props.name}</h1>
-        <Button bsStyle="primary">确定</Button>
+
       </div>
     )
   }

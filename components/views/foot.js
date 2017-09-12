@@ -11,8 +11,8 @@ class Foot extends Component {
         <h3>Thumbnail label</h3>
         <p>Description</p>
         <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
+          <Button className="ui inverted violet button">Button</Button>&nbsp;
+          <Button className="ui inverted orange button">Button</Button>
         </p>
       </Thumbnail>
     </Col>
@@ -21,8 +21,8 @@ class Foot extends Component {
         <h3>Thumbnail label</h3>
         <p>Description</p>
         <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
+          <Button className="ui inverted violet button">Button</Button>&nbsp;
+          <Button className="ui inverted orange button">Button</Button>
         </p>
       </Thumbnail>
     </Col>
@@ -31,8 +31,8 @@ class Foot extends Component {
         <h3>Thumbnail label</h3>
         <p>Description</p>
         <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
+          <Button className="ui inverted violet button">Button</Button>&nbsp;
+          <Button className="ui inverted orange button">Button</Button>
         </p>
       </Thumbnail>
     </Col>
@@ -41,8 +41,8 @@ class Foot extends Component {
         <h3>Thumbnail label</h3>
         <p>Description</p>
         <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
+          <Button className="ui inverted violet button">Button</Button>&nbsp;
+          <Button className="ui inverted orange button">Button</Button>
         </p>
       </Thumbnail>
     </Col>
